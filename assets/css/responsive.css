@@ -1,0 +1,29 @@
+@media(max-width:991px){
+
+section{
+
+padding:80px 0;
+
+}
+
+}
+
+@media(max-width:768px){
+
+section{
+
+padding:70px 0;
+
+}
+
+}
+
+@media(max-width:576px){
+
+section{
+
+padding:60px 0;
+
+}
+
+}
