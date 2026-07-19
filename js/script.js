@@ -1,12 +1,8 @@
-// ==========================================
-// PORTFOLIO LOADED
-// =======================================
+
 
 console.log("Portfolio Loaded");
 
-// ==========================================
-// EMAILJS
-// ====================================
+
 
 const form = document.getElementById("contactForm");
 
@@ -42,9 +38,7 @@ if (form) {
 
 }
 
-// ====================================
-// LANGUAGE DROPDOWN
-// ==========================================
+
 
 const languageBtn = document.getElementById("languageBtn");
 const languageMenu = document.getElementById("languageMenu");
@@ -67,9 +61,6 @@ if (languageBtn && languageMenu) {
 
 }
 
-// ==========================================
-// SHEVY
-// =========================================
 
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -118,9 +109,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-   // ==========================================
-// SHEVY CHAT
-// ==========================================
 
 const sendBtn = document.getElementById("sendBtn");
 const userInput = document.getElementById("userInput");
@@ -156,9 +144,6 @@ function sendMessage() {
 
     let reply = "";
 
-    // ==========================================
-    // GREETINGS
-    // ==========================================
 
     if (
 
@@ -176,9 +161,6 @@ function sendMessage() {
 
     }
 
-    // ==========================================
-    // HOW ARE YOU
-    // ==========================================
 
     else if (
 
@@ -199,9 +181,7 @@ I'm doing great. I'm functioning perfectly and ready to help. Thanks for asking!
 
     }
 
-    // ==========================================
-    // USER IS GOOD
-    // ==========================================
+
 
     else if (
 
@@ -228,9 +208,6 @@ How can I help you explore Ivy's portfolio today?
 
     }
 
-    // ==========================================
-    // USER IS SAD
-    // ==========================================
 
     else if (
 
@@ -256,9 +233,6 @@ If browsing Ivy's portfolio can help distract you for a moment or answer any que
 
     }
 
-    // ==========================================
-    // THANK YOU
-    // ==========================================
 
     else if (
 
@@ -279,9 +253,7 @@ If there's anything else you'd like to know about Ivy's work or experience, just
 
     }
 
-    // ==========================================
-    // BYE
-    // ==========================================
+
 
     else if (
 
@@ -301,9 +273,6 @@ Have a wonderful day, and thanks for visiting Ivy's portfolio!
 
     }
 
-    // ==========================================
-    // ABOUT
-    // ==========================================
 
     else if (question.includes("about")) {
 
@@ -311,9 +280,7 @@ Have a wonderful day, and thanks for visiting Ivy's portfolio!
 
     }
 
-    // ==========================================
-    // SKILLS
-    // ==========================================
+
 
     else if (question.includes("skill")) {
 
@@ -321,9 +288,7 @@ Have a wonderful day, and thanks for visiting Ivy's portfolio!
 
     }
 
-    // ==========================================
-    // PROJECTS
-    // ==========================================
+ 
 
     else if (question.includes("project")) {
 
@@ -331,9 +296,7 @@ Have a wonderful day, and thanks for visiting Ivy's portfolio!
 
     }
 
-    // ==========================================
-    // RESUME
-    // ==========================================
+
 
     else if (question.includes("resume")) {
 
@@ -341,9 +304,7 @@ Have a wonderful day, and thanks for visiting Ivy's portfolio!
 
     }
 
-    // ==========================================
-    // CONTACT
-    // ==========================================
+
 
     else if (question.includes("contact")) {
 
@@ -351,9 +312,6 @@ Have a wonderful day, and thanks for visiting Ivy's portfolio!
 
     }
 
-    // ==========================================
-    // WHO ARE YOU
-    // ==========================================
 
     else if (
 
@@ -376,9 +334,6 @@ Feel free to ask me anything!
 
     }
 
-    // ==========================================
-    // PERSONAL QUESTIONS
-    // ==========================================
 
     else if (
 
@@ -421,9 +376,7 @@ If you have any professional inquiries, feel free to use the contact form. Ivy w
 
     }
 
-    // ==========================================
-    // UNKNOWN
-    // ==========================================
+
 
     else {
 
@@ -447,9 +400,7 @@ If you have any professional inquiries, feel free to use the contact form. Ivy w
 
 }
 
-// ==========================================
-// LANGUAGE TRANSLATION
-// ==========================================
+
 
 const englishBtn = document.getElementById("englishBtn");
 const tagalogBtn = document.getElementById("tagalogBtn");
@@ -458,13 +409,13 @@ const translations = {
 
     en: {
 
-        // NAVBAR
+   
         navHome: "Home",
         navAbout: "About",
         navProjects: "Projects",
         navContact: "Contact",
 
-        // HERO
+       
         heroTitle: `
             Building Modern
             <span>Digital Experiences</span><br>
@@ -478,7 +429,7 @@ const translations = {
 
         downloadResume: "Download Resume",
 
-        // ABOUT
+       
         aboutTitle: `
             Crafting Clean Interfaces
             With Modern Code.
@@ -540,13 +491,13 @@ sendMessage: "Send Message",
 
     tl: {
 
-        // NAVBAR
+       
         navHome: "Bahay",
         navAbout: "Tungkol",
         navProjects: "Mga Proyekto",
         navContact: "Makipag-ugnayan",
 
-        // HERO
+  
         heroTitle: `
             Gumagawa ng
             <span>Digital Experience</span><br>
@@ -560,7 +511,7 @@ sendMessage: "Send Message",
 
         downloadResume: "I-download ang Resume",
 
-        // ABOUT
+       
         aboutTitle: `
             Lumilikha ng Malinis na Interface
             Gamit ang Makabagong Code.
@@ -630,7 +581,7 @@ function changeLanguage(lang){
 
 }
 
-// English
+
 if(englishBtn){
 
     englishBtn.addEventListener("click", function(){
@@ -641,7 +592,7 @@ if(englishBtn){
 
 }
 
-// Tagalog
+
 if(tagalogBtn){
 
     tagalogBtn.addEventListener("click", function(){

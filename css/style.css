@@ -1,6 +1,3 @@
-/* ==========================================
-   GLOBAL STYLES
-========================================== */
 
 *{
     margin:0;
@@ -37,9 +34,6 @@ img{
     display:block;
 
 }
-/* ==========================================
-   NAVBAR
-========================================== */
 
 .custom-navbar{
 
@@ -157,9 +151,6 @@ img{
 
 }
 
-/* ==========================================
-   LANGUAGE DROPDOWN
-========================================== */
 
 .language-dropdown{
 
@@ -263,9 +254,6 @@ img{
     }
 
 }
-/* ==========================================
-   HERO
-========================================== */
 
 .hero{
 
@@ -283,7 +271,6 @@ img{
 
 }
 
-/* Background Glow */
 
 .hero::before{
 
@@ -435,9 +422,6 @@ img{
     padding-left:40px;
 
 }
-/* ===============================
-   HERO IMAGE WRAPPER
-================================ */
 
 .hero-image-wrapper{
 
@@ -535,9 +519,6 @@ img{
 
 }
 
-/* ==========================================
-   RESPONSIVE HERO
-========================================== */
 
 @media (max-width:991px){
 
@@ -610,9 +591,6 @@ img{
 
 }
 
-/* ==========================================
-   ABOUT
-========================================== */
 
 .about{
 
@@ -666,9 +644,6 @@ img{
 
 }
 
-/* ==========================================
-   TECH STACK
-========================================== */
 
 .tech-stack{
 
@@ -788,9 +763,6 @@ img{
 
 
 
-/* ==========================================
-   PROJECTS
-========================================== */
 
 .project-grid{
 
@@ -873,11 +845,10 @@ img{
 }
 
 .project-image img{
-
     width:100%;
-
-    transition:.4s;
-
+    height:230px;
+    object-fit:cover;
+    display:block;
 }
 
 .project-card:hover img{
@@ -985,9 +956,6 @@ img{
 
 
 
-/* ==========================================
-   CONTACT
-========================================== */
 
 .contact{
 
@@ -1332,9 +1300,6 @@ img{
 
 
 
-/* =====================
-   SHEVY hehehe
-========================================== */
 
 .ai-chat-btn{
 
@@ -1411,9 +1376,6 @@ img{
 }
 
 
-/* ===========================
-   SHEVY CHAT WINDOW
-=========================== */
 
 .shevy-chat{
 
@@ -1622,9 +1584,6 @@ img{
     }
 
 }
-/* ===========================
-   SHEVY LOADING
-=========================== */
 
 .shevy-loading{
 
@@ -1660,9 +1619,6 @@ img{
 
 }
 
-/* ===============================
-   SHEVY BUTTON
-========================================== */
 
 .ai-chat-btn{
 
@@ -1737,9 +1693,6 @@ img{
 }
 
 
-/* ==========================================
-   SHEVY CHAT
-========================================== */
 
 .shevy-chat{
 
@@ -1794,9 +1747,6 @@ img{
 }
 
 
-/* ==========================================
-   LOADING
-========================================== */
 
 .shevy-loading{
 
@@ -1895,9 +1845,6 @@ img{
 }
 
 
-/* ==========================================
-   CHAT BODY
-========================================== */
 
 .shevy-body{
 
@@ -1920,9 +1867,6 @@ img{
 }
 
 
-/* ==========================================
-   HEADER
-========================================== */
 
 .shevy-header{
 
@@ -1971,9 +1915,6 @@ img{
 }
 
 
-/* ==========================================
-   MESSAGES
-========================================== */
 
 .shevy-messages{
 
@@ -2020,9 +1961,6 @@ img{
 }
 
 
-/* ==========================================
-   INPUT
-========================================== */
 
 .shevy-input{
 
@@ -2069,9 +2007,6 @@ img{
 }
 
 
-/* ==========================================
-   ANIMATION
-========================================== */
 
 @keyframes pulse{
 
@@ -2118,9 +2053,6 @@ img{
 }
 
 
-/* ==========================================
-   MOBILE
-========================================== */
 
 @media(max-width:768px){
 
@@ -2156,9 +2088,6 @@ img{
 
 
 
-/* ==========================================
-   SAMPLES
-========================================== */
 
 .samples-header{
 
@@ -2407,9 +2336,6 @@ img{
     font-weight:600;
 
 }
-/* ==========================================
-   SAMPLES CTA
-========================================== */
 
 .samples-cta{
 
@@ -2472,9 +2398,6 @@ img{
     box-shadow:0 12px 30px rgba(0,119,255,.25);
 
 }
-/* ==========================================
-   BACKGROUND GRADIENT
-========================================== */
 
 body{
     background:
@@ -2594,6 +2517,212 @@ body{
 
 .sample-item:last-child::after{
     display:none;
+}
+
+
+.gallery-header{
+
+    padding:90px 0 70px;
+    text-align:center;
+
+}
+
+.gallery-header h1{
+
+    font-size:54px;
+    font-weight:800;
+    margin-bottom:20px;
+
+}
+
+.gallery-header p{
+
+    max-width:760px;
+    margin:auto;
+    color:#9FB2C9;
+    line-height:1.8;
+
+}
+
+.gallery{
+
+    padding-bottom:120px;
+
+}
+
+.gallery-grid{
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:28px;
+
+}
+
+.gallery-grid img{
+
+    width:100%;
+    border-radius:18px;
+    cursor:pointer;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.35s;
+
+}
+
+.gallery-grid img:hover{
+
+    transform:translateY(-8px) scale(1.02);
+
+    box-shadow:0 20px 45px rgba(0,119,255,.22);
+
+}
+@media(max-width:991px){
+
+.gallery-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:600px){
+
+.gallery-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
+
+.lightbox{
+
+    position:fixed;
+    inset:0;
+
+    background:rgba(0,0,0,.92);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    opacity:0;
+    visibility:hidden;
+
+    transition:.35s;
+
+    z-index:9999;
+
+}
+
+.lightbox.active{
+
+    opacity:1;
+    visibility:visible;
+
+}
+
+.lightbox img{
+
+    max-width:90%;
+    max-height:90%;
+
+    border-radius:18px;
+
+    box-shadow:0 25px 70px rgba(0,0,0,.55);
+
+    animation:zoomIn .35s ease;
+
+}
+
+.lightbox-close{
+
+    position:absolute;
+
+    top:35px;
+    right:45px;
+
+    color:#fff;
+
+    font-size:48px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.lightbox-close:hover{
+
+    color:#3A9DFF;
+
+}
+
+@keyframes zoomIn{
+
+    from{
+
+        transform:scale(.85);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+.lightbox-prev,
+.lightbox-next{
+
+    position:absolute;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    font-size:65px;
+
+    color:white;
+
+    cursor:pointer;
+
+    user-select:none;
+
+    transition:.3s;
+
+    padding:15px;
+
+}
+
+.lightbox-prev{
+
+    left:35px;
+
+}
+
+.lightbox-next{
+
+    right:35px;
+
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover{
+
+    color:#3A9DFF;
+
+    transform:translateY(-50%) scale(1.15);
+
 }
 
 
